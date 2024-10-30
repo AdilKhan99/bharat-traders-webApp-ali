@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.aboutmain {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(195, 213, 195);
+    display: flex;
+}
+#about{
+     text-align: center;
+     font-size: 50px;
+     margin-bottom: 30px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 100;
+}
+#paragraph{
+    line-height: 25px;
+}
+
+.aboutp1 {
+    width: 50%;
+    height: 700px;
+    background-color: whitesmoke; /* This will override the gold color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutp2 {
+    width: 50%;
+    height: 700px;
+    background-color: gold;
+    background-image: url(/Users/mdadil/Desktop/bharat-traders-web-app/src/Bharat_traders/images/papa.png);
+    background-repeat: no-repeat;
+}
+.aboutmain2{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(195, 213, 195);
+    display: flex;
+}
+.aboutp3 {
+    width: 50%;
+    height: 700px;
+    background-color: gold;
+    background-image: url(src/Bharat_traders/images/m1.png);
+    background-repeat: no-repeat;
+}
+.aboutp4 {
+    width: 50%;
+    height: 700px;
+    background-color: whitesmoke; /* This will override the gold color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#vision{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+#paragraph2{
+    line-height: 25px;
+}
+
+
