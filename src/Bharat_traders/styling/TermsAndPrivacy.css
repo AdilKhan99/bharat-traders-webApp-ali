@@ -1,0 +1,70 @@
+.terms-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #444;
+    text-align: left; /* Ensure heading alignment starts at the left */
+  }
+  
+  p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  ul {
+    margin: 10px 0 20px 0; /* Remove left padding for better alignment */
+    padding-left: 20px; /* Indent the text slightly */
+    list-style-position: inside; /* Ensure bullet points are inside the left boundary */
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    text-align: left; /* Start and end aligned to the left */
+  }
+  
+  strong {
+    color: #000;
+  }
+  
+  /* Add a page break before the Privacy Notice section */
+  .privacy-section {
+    page-break-before: always;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .terms-container {
+      padding: 15px;
+    }
+  
+    .terms-title {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  

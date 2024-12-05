@@ -1,0 +1,120 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bharat-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    /* margin-bottom: 10px; */
+  }
+  
+  .sign-in-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 110px;
+  }
+  
+  .label-text {
+    text-align: left;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-box {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  .continue-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .continue-button:hover {
+    background-color: #ddb347;
+  }
+  
+  .help-text {
+    font-size: 12px;
+    color: #666;
+    margin: 15px 0;
+  }
+  
+  .help-link {
+    font-size: 12px;
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  .help-link:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .new-account-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .create-account-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e7e9ec;
+    border: 1px solid #adb1b8;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .create-account-button:hover {
+    background-color: #d7d9dc;
+  }
+  
+  .link {
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,123 @@
+/* CreateAccountPage.css */
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .create-account-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115vh;
+  }
+  
+  .create-account-box {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  .bharat-logo {
+    width: 150px;
+    height: 150px;
+    /* display: block; */
+    margin: 35px auto 0px auto;
+  }
+  
+  .create-account-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+
+  
+  .label-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-box {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .mobile-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .country-code {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+
+  
+  .mobile-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  .verify-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .verify-button:hover {
+    background-color: #ddb347;
+  }
+  
+  .info-text {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .help-text,
+  .signin-text {
+    font-size: 12px;
+    margin: 15px 0;
+  }
+  
+  .link {
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+  }

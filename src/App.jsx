@@ -3,6 +3,7 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import Path from './Bharat_traders/Path';
+import './tailwind.css';
 
 
 
@@ -32,6 +33,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
       <Path/>
+      
+      
 
 
     </>

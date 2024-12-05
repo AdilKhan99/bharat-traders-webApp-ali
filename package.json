@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently 'vite' 'npm run tailwind:watch'",
-    "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "tailwind:watch": "npx tailwindcss -i ./src/app.css -o ./src/tailwind.css --watch",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-  }, 
+  },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"

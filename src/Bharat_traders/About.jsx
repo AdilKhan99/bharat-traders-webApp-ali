@@ -1,13 +1,19 @@
 import React from 'react'
 import './styling/about.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
 // import img1 from './images/papa.png'
+import a from './images/icecream2.jpg'
 
 
-function About() {
+function About() {  
   return (
     <>
+     <Navbar/>
       <h1>this is the about page</h1>
       <div className='aboutmain'>
+         {/* <div id='factory'> <img src={a} alt="" /> </div> */}
+
         <div className='aboutp1'>
         <h1 id='about'>About Us</h1>
          <p id='paragraph'>
@@ -48,7 +54,7 @@ function About() {
 
 
 
-
+        <Footer/>
     </>
   )
 }

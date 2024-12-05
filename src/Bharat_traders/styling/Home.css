@@ -1,0 +1,115 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Slider container */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    /* height: 600px; */
+    height: 700px;
+    overflow: hidden;
+  }
+  
+  /* Slider track */
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Each slide */
+  .slide {
+    min-width: 100%;
+    /* height: 600px; */
+    height: 700px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Navigation buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none; /* No background */
+    color: black; /* Arrow color */
+    border: none; /* No border */
+    font-size: 2.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+    border-radius: 100%; /* Circular buttons */
+
+    width: 60px;
+    height: 55px;
+  }
+  
+  .nav-button.left {
+    left: 20px;
+  }
+  
+  .nav-button.right {
+    right: 20px;
+  }
+  
+  .nav-button:hover {
+    transform: translateY(-50%) scale(1.1); /* Slight grow effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    color: #ff7e5f; /* Change color of arrows on hover */
+  }
+  
+  .button-icon {
+    font-size: 2.5rem; /* Adjust icon size */
+  }
+
+  #Addtocart{
+   background-color: #047664;
+   color: white;
+   padding: 7px;
+   border-radius: 20px;
+   font-size: 14px;
+  }
+
+   #Addtocart {
+    /* background-color: #047664; */
+    background-color: #f1623f;
+    /* background-color: rgb(237, 237, 20); */
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #Addtocart:hover {
+    transform: scale(1.1); /* Slightly increase size */
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  
+  
+
+
+
+
+
+
+
+
+  
+  

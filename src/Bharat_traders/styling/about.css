@@ -9,14 +9,15 @@
     display: flex;
 }
 #about{
-     text-align: center;
-     font-size: 50px;
-     margin-bottom: 30px;
-     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-weight: 100;
+
+     font-family: 'Georgia', serif;
+        font-size: 4rem;
+        color: #222;
+        letter-spacing: 1.2px;
 }
 #paragraph{
     line-height: 25px;
+    font-size: 18px; color: #555; line-height: 1.6;
 }
 
 .aboutp1 {
@@ -45,7 +46,7 @@
     width: 50%;
     height: 700px;
     background-color: gold;
-    background-image: url(src/Bharat_traders/images/m1.png);
+    background-image: url(src/Bharat_traders/images/icecream3.jpg);
     background-repeat: no-repeat;
 }
 .aboutp4 {
@@ -58,14 +59,14 @@
 }
 
 #vision{
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100;
+        font-family: 'Georgia', serif;
+        font-size: 4rem;
+        color: #222;
+        letter-spacing: 1.2px;
 }
 #paragraph2{
     line-height: 25px;
+    font-size: 18px; color: #555; line-height: 1.6;
 }
 
 

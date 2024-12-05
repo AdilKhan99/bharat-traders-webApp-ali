@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.part1{
+    width: 100%;
+    height: 400px;
+    background-color:#dee2e6;
+    display: flex;
+
+}
+.part1x{
+    width: 50%;
+    height: 400px;
+  } 
+
+  #logo2{
+    width: 650px;
+    height: 400px;
+  }
+ .part1y{
+    width: 50%;
+    height: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sectionTitle {
+        font-family: 'Georgia', serif;
+        font-size: 1.8rem;
+        color: #222;
+        letter-spacing: 1.2px;
+  }
+  .sectionTitle2 {
+    font-size: 1.1rem;
+    color: black;
+  }
+
+
+  .part2{
+    display: flex;
+  }
+  .part2a{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 80px;
+    text-align: left;
+  }
+  .part2b{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  .part2c{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 80px;
+    text-align: left;
+  }
+  .part2d{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 80px;
+    text-align: left;
+  }
+  .sectionTitle3{
+    font-family: 'Georgia', serif;
+        font-size: 1.5rem;
+        color: #222;
+        letter-spacing: 1.2px;
+
+  }
+.icon3{
+   padding-right: 10px;
+}
+.icon4{
+  padding-right: 15px;
+}
+
+
+  #location{
+    width: 100px;
+    height: 75px;
+  }
+
+  #helping{
+    width: 100px;
+    height: 75px;
+  }
+
+  #timming{
+    width: 100px;
+    height: 75px;
+  }
+  #gmail{
+    width: 140px;
+    height: 50px;
+  }
+  .map {
+    width: 100%;
+    height: 450px;
+}
+iframe{
+    width: 100%;
+    height: 450px;
+}
