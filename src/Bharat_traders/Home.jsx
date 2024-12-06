@@ -177,6 +177,8 @@
 
 
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
+
 import '../tailwind.css';
 import './styling/Home.css';
 import a from './images/Sweets1.jpg';
@@ -188,25 +190,25 @@ import Footer from './Footer';
 // Image Slider Component
 const ImageSlider = () => {
   const images = [a, b, c];
-
+  
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
-
+    
     return () => clearInterval(interval);
   }, [images.length]);
-
+  
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
-
+  
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
-
+  
   return (
     <div className="slider-container">
       <div
@@ -214,7 +216,7 @@ const ImageSlider = () => {
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
-      >
+        >
         {images.map((image, index) => (
           <div className="slide" key={index}>
             <img src={image} alt={`Slide ${index + 1}`} />
@@ -237,6 +239,8 @@ const ProductList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // const nav = useNavigate(); 
+  
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -253,13 +257,16 @@ const ProductList = () => {
         setLoading(false);
       }
     };
-
+    
     fetchProducts();
+    
   }, []);
 
   const handleAddToCart = async (productId) => {
+    
     try {
       const cartId = localStorage.getItem("cartId");
+      console.log("cartId",cartId);
       if (!cartId) {
         alert("Cart ID not found. Please log in again.");
         return;
@@ -284,6 +291,7 @@ const ProductList = () => {
       }
 
       alert("Product added to cart successfully!");
+      // nav("/CartAssigned");
     } catch (error) {
       console.error("Error in handleAddToCart:", error);
       alert(`Error adding product to cart: ${error.message}`);
@@ -325,6 +333,7 @@ const ProductList = () => {
 
 // Main Home Component
 function Home() {
+  
   useEffect(() => {
     const fetchCartId = async () => {
       try {

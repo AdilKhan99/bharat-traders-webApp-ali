@@ -209,12 +209,13 @@ import Footer from "./Footer";
 const CartAssigned = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
-
+console.log("hi assignee");
   useEffect(() => {
     const fetchCartItems = async () => {
       const cartId = localStorage.getItem("cartId");
       try {
-        const response = await fetch(`http://localhost:8080/carts/${cartId}/items`);
+        // const response = await fetch(`http://localhost:8080/carts/${cartId}/items`);
+        const response = await fetch(`http://localhost:8080/cart-items/${cartId}/items`)
         if (!response.ok) {
           throw new Error(`Failed to fetch cart items: ${response.status}`);
         }
@@ -237,21 +238,34 @@ const CartAssigned = () => {
     setTotal(totalPrice);
   };
 
+  
   const handleUpdateQuantity = async (cartItemId, quantity) => {
-    if (quantity <= 0) {
-      alert("Quantity cannot be less than 1");
-      return;
-    }
-
     try {
+      if (quantity <= 0) {
+        // Delete the item from the backend
+        const deleteResponse = await fetch(`http://localhost:8080/cart-items/${cartItemId}`, {
+          method: "DELETE",
+        });
+  
+        if (!deleteResponse.ok) {
+          throw new Error(`Failed to delete cart item: ${deleteResponse.status}`);
+        }
+  
+        // Remove the item from the frontend state
+        setCartItems((prevItems) => prevItems.filter((item) => item.cartItemId !== cartItemId));
+        calculateTotal(cartItems);
+        return;
+      }
+  
+      // Update the quantity of the item
       const response = await fetch(`http://localhost:8080/cart-items/${cartItemId}/quantity/${quantity}`, {
         method: "PUT",
       });
-
+  
       if (!response.ok) {
         throw new Error(`Failed to update quantity: ${response.status}`);
       }
-
+  
       const updatedCartItem = await response.json();
       setCartItems((prevItems) =>
         prevItems.map((item) =>
@@ -262,9 +276,10 @@ const CartAssigned = () => {
       );
       calculateTotal(cartItems);
     } catch (error) {
-      console.error("Error updating quantity:", error);
+      console.error("Error updating cart item:", error);
     }
   };
+  
 
   if (cartItems.length === 0) return <div>Your cart is empty.</div>;
 
@@ -320,7 +335,7 @@ const CartAssigned = () => {
         </tbody>
       </table>
       <div className="text-right mt-4">
-        <h2 className="text-xl font-bold">Total: ₹{total.toFixed(2)}</h2>
+        <h2 className="text-xl font-bold text-right">Total: ₹{total.toFixed(2)}</h2>
       </div>
       <Footer/>
     </div>
