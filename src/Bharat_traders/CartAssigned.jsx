@@ -206,16 +206,20 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+
+import { useNavigate } from "react-router-dom";
+
 const CartAssigned = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
-console.log("hi assignee");
+  const navigate = useNavigate();
+
+  console.log("hi assignee");
   useEffect(() => {
     const fetchCartItems = async () => {
       const cartId = localStorage.getItem("cartId");
       try {
-        // const response = await fetch(`http://localhost:8080/carts/${cartId}/items`);
-        const response = await fetch(`http://localhost:8080/cart-items/${cartId}/items`)
+        const response = await fetch(`http://localhost:8080/cart-items/${cartId}/items`);
         if (!response.ok) {
           throw new Error(`Failed to fetch cart items: ${response.status}`);
         }
@@ -238,7 +242,10 @@ console.log("hi assignee");
     setTotal(totalPrice);
   };
 
-  
+  const handleCheckout = () => {
+    navigate("/checkout");
+  };
+
   const handleUpdateQuantity = async (cartItemId, quantity) => {
     try {
       if (quantity <= 0) {
@@ -285,7 +292,7 @@ console.log("hi assignee");
 
   return (
     <div className="p-4">
-      <Navbar/>
+      <Navbar />
       <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
       <table className="table-auto w-full border-collapse border border-gray-300">
         <caption className="text-lg font-bold mb-2">Your Selected Products</caption>
@@ -336,12 +343,18 @@ console.log("hi assignee");
       </table>
       <div className="text-right mt-4">
         <h2 className="text-xl font-bold text-right">Total: ₹{total.toFixed(2)}</h2>
+        <button
+          onClick={handleCheckout}
+          className="bg-green-500 text-white px-4 py-2 rounded mt-4"
+        >
+          Proceed to Checkout
+        </button>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  
   );
 };
+
 
 
 export default CartAssigned;

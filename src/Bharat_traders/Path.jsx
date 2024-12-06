@@ -64,6 +64,7 @@ import CreateAccount from './CreateAccount'
 import Login from './Login'
 import Verification from './Verification'
 import TermsAndPrivacy from './TermsAndPrivacy'
+import Checkout from "./Checkout";
 
 function Path() {
   return (
@@ -78,6 +79,7 @@ function Path() {
           <Route element={<Milk />} path="/Milk" />
           <Route element={<Cart />} path="/Cart" />
           <Route element={<CartAssigned />} path="/CartAssigned" />
+          <Route path="/checkout" element={<Checkout />} />
           {/* <Route element={<Cart/>} path="/CartAssigned" /> */}
           <Route element={<ContactUs />} path="/ContactUs" />
           <Route element={<CreateAccount />} path="/CreateAccount" />
