@@ -44,7 +44,7 @@ function Navbar() {
       <div><Link to="/Bakery">Bakery raw material</Link></div>
       <div><Link to="/Sweets">Sweets raw material</Link></div>
       <div><Link to="/Milk">Milk Powder</Link></div>
-      <div><Link to="/CartAssigned">
+      <div><Link to={isLoggedIn ? "/CartAssigned" : "/Cart"}>
         <img src={cartIcon} alt="Cart" id="cart1" />
       </Link></div>
       <div><Link to="/ContactUs">Contact Us</Link></div>
