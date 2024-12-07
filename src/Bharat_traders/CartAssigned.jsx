@@ -203,6 +203,7 @@
 
 
 import React, { useEffect, useState } from "react";
+import './styling/CartAssigned.css'
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -345,8 +346,7 @@ const CartAssigned = () => {
         <h2 className="text-xl font-bold text-right">Total: ₹{total.toFixed(2)}</h2>
         <button
           onClick={handleCheckout}
-          className="bg-green-500 text-white px-4 py-2 rounded mt-4"
-        >
+          className="bg-green-500 text-white px-4 py-2 rounded mt-4 text-center">
           Proceed to Checkout
         </button>
       </div>

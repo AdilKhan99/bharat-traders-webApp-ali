@@ -1,5 +1,6 @@
 import React from "react";
 import "./styling/Footer.css";
+import a from './images/finalcirclelogo.png'
 
 
 function Footer() {
@@ -59,7 +60,7 @@ function Footer() {
         </div>
 
         <div class="foot-panel3">
-          <div class="logo-last"></div>
+          <div class="logo-last"> <img src={a} alt="" /> </div>
           <div><h1 id="headingStyle">Trusted House of Food Raw Material's</h1>
           </div>
         </div>
