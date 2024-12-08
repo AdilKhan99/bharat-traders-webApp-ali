@@ -10,7 +10,7 @@ function Footer() {
       <footer className="footer">
         {/* Amazon footer */}
         <div class="foot-panel1">
-          <a href="#backTotop"> Back to Top</a> 
+          <a href="#backToTop"> Back to Top</a> 
           {/* backTotop is a id present in the navbar.jsx there to there we are calling */}
         </div>
 

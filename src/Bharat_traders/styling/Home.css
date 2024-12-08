@@ -82,7 +82,7 @@
    font-size: 14px;
   }
 
-   #Addtocart {
+   #AddToCart {
     /* background-color: #047664; */
     background-color: #f1623f;
     /* background-color: rgb(237, 237, 20); */
@@ -94,13 +94,40 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  #Addtocart:hover {
+  #AddToCart:hover {
     transform: scale(1.1); /* Slightly increase size */
      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   }
   
+/* Button for Back to Top */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  /* background-color: white; Background color */
+  color: black; /* Arrow color */
+  border: none;
+  border-radius: 100%; /* Circular button */
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px black;
+  transition: opacity 0.5s ease-in-out;
+}
 
-  
+.back-to-top-btn:hover {
+  background-color: rgb(244, 175, 48); /* Darken the background color on hover */
+}
+
+.arrow-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.back-to-top-btn:focus {
+  outline: none; /* Remove focus outline */
+}
+
   
   
 

@@ -14,7 +14,7 @@ const Checkout = () => {
   };
 
   return (
-    <div className="p-4">
+    <div>
       <Navbar />
       <h1 className="text-2xl font-bold mb-4">Checkout</h1>
       <div className="mb-4">

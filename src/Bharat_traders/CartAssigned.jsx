@@ -95,7 +95,7 @@ const CartAssigned = () => {
          <img src={a} alt="Empty Cart" className="empty-cart-image mx-auto w-128 h-128" />
         
        </div>):(
-        <div>
+        <div className="p-4">
         <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
         <table className="table-auto w-full border-collapse border border-gray-300">
           <caption className="text-lg font-bold mb-2">Your Selected Products</caption>
