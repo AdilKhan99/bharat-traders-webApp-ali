@@ -2,16 +2,6 @@ import React from 'react'
 import './styling/Milk.css'
 import Navbar from './Navbar';
 import Footer from './Footer';
-import a from './images/Milk1.webp'
-import b from './images/Milk2.jpg'
-import c from './images/Milk3.png'
-import d from './images/Milk4.png'
-import e from './images/Milk5.jpg'
-import f from './images/Milk6.webp'
-import g from './images/Milk7.webp'
-import h from './images/Milk8.png'
-import i from './images/Milk9.png'
-import j from './images/Milk10.jpg'
 import k from './images/Milk11.jpg'
 import l from './images/Milk17.jpg'
 
@@ -74,40 +64,16 @@ const ProductList = () => {
   );
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function Milk() {
   return (
     <div>
       <Navbar/>
-      <h1>this is the Milk powder page</h1>
+      {/* <h1>this is the Milk powder page</h1> */}
       <div className='part1'>
         <img src={l} alt="" id='img1'/>
       </div>
       <div className='part2'>
-        <img src={k} alt="" />
+        <img src={k} alt="" id='redtag'/>
       </div>
     
       <div>

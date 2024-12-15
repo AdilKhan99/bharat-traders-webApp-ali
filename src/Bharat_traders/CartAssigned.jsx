@@ -40,7 +40,7 @@ const CartAssigned = () => {
   };
 
   const handleCheckout = () => {
-    navigate("/checkout");
+    navigate("/checkout", { state: { totalAmount: total } });
   };
 
   const handleUpdateQuantity = async (cartItemId, quantity) => {
@@ -92,7 +92,7 @@ const CartAssigned = () => {
       <Navbar />
     
          {cartItems.length === 0 ? (<div className="empty-cart p-8">
-         <img src={a} alt="Empty Cart" className="empty-cart-image mx-auto w-128 h-128" />
+         <img src={a} alt="Empty Cart" className="empty-cart-image mx-auto w-128 h-128" id="emptycart"/>
         
        </div>):(
         <div className="p-4">

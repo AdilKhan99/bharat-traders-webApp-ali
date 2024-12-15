@@ -36,7 +36,7 @@ function Navbar() {
       <div>
         <Link to="/">
           <img src={logoIcon} alt="Logo" id="logo1" />
-        </Link>
+        </Link> 
       </div>
       <div><Link to="/">Home</Link></div>
       <div><Link to="/About">About</Link></div>
@@ -51,13 +51,9 @@ function Navbar() {
       <div class="flex flex-col items-center" >
         {isLoggedIn ? (
           <>
-            <span>Welcome, {customerName}</span>
-            <img
-              src={logoutIcon}
-              alt="Logout"
-              id="logoutIcon"
-              onClick={handleLogout}
-            />
+            <span id='nameofcustomer'>{customerName}</span> 
+            {/* customer name on the top of loginicon */}
+            <img src={logoutIcon} alt="Logout" id="logoutIcon" onClick={handleLogout}/>
           </>
         ) : (
           <Link to="/Login">

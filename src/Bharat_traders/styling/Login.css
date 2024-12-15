@@ -55,8 +55,8 @@ body {
   .continue-button {
     width: 100%;
     padding: 10px;
-    background-color: #f0c14b;
-    border: 1px solid #a88734;
+    background-color: rgb(5, 196, 5);
+    border: 1px solid white;
     border-radius: 3px;
     font-size: 14px;
     font-weight: bold;
@@ -64,7 +64,7 @@ body {
   }
   
   .continue-button:hover {
-    background-color: #ddb347;
+    background-color: rgb(4, 134, 4);
   }
   
   .help-text {

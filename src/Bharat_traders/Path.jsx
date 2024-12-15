@@ -65,6 +65,7 @@ import Login from './Login'
 import Verification from './Verification'
 import TermsAndPrivacy from './TermsAndPrivacy'
 import Checkout from "./Checkout";
+import ForgotPassword from './ForgotPassword'
 
 function Path() {
   return (
@@ -84,6 +85,7 @@ function Path() {
           <Route element={<ContactUs />} path="/ContactUs" />
           <Route element={<CreateAccount />} path="/CreateAccount" />
           <Route element={<Login />} path="/Login" />
+          <Route element={<ForgotPassword />} path="/ForgotPassword" />
           <Route element={<Verification />} path="/Verification" />
           <Route element={<TermsAndPrivacy />} path="/TermsAndPrivacy" />
         </Routes>

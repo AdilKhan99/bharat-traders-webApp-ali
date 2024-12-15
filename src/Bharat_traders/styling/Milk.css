@@ -9,7 +9,11 @@
 }
 #img1{
     width: 100%;
-    height: 525px;
+    height: 525px; 
+}
+#redtag{
+  width: 100%;
+  height: 250px;
 }
 
 .App {

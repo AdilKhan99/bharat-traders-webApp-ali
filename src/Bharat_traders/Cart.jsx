@@ -27,14 +27,14 @@ function Cart() {
   return (
     <div>
       <Navbar/>
-      <h1>this is the cart page</h1>
+      {/* <h1>this is the cart page</h1> */}
       <div className='part1'>
 
       <div className='part1a'> 
        <div className='part1b'>
         <img src={a} alt="" id='cartimg'/>
        </div>
-       <div className='part1c'>
+       <div className='part1c'> 
         <h1 id='title1'>Your Bharat Traders Cart is empty</h1>
         <p>Shop today’s deals</p>
         <br />

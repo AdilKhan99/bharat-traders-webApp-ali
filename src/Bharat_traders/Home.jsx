@@ -152,7 +152,7 @@ const BackToTopButton = () => {
   return (
     <button 
       onClick={scrollToTop} 
-      className="fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
+      className="fixed bottom-5 right-5 bg-[#047664] text-white p-3 rounded-full shadow-lg hover:bg-orange-500 transition"
     >
       &#8593;
     </button>
@@ -170,7 +170,7 @@ function Home() {
         const data = await response.json();
         localStorage.setItem('cartId', data.cartId);
       } catch (error) {
-        console.error('Error fetching cart ID:', error);
+        console.error('Error fetching cart ID:', error); 
       }
     };
 
@@ -181,7 +181,7 @@ function Home() {
     <div>
       <Navbar />
       <ImageSlider />
-      <h1 className="text-center text-3xl font-bold my-6">Welcome to Our Shop</h1>
+      
       <ProductList />
       <BackToTopButton />
       <Footer />

@@ -6,8 +6,6 @@ import img1 from './images/tracking.png'
 import img2 from './images/customer-service.png'
 import img3 from './images/correct.png'
 import img4 from './images/gmail.png'
-import img5 from './images/logo5.jpeg'
-import img6 from './images/finallogo3.jpg'
 import img7 from './images/finallogo4.jpeg'
 
 
@@ -16,7 +14,7 @@ function ContactUs() {
     //section 1
     <>
     <Navbar/>
-      <h1>this is the contact us page.</h1>
+      {/* <h1>this is the contact us page.</h1> */}
       <div className='part1'>
 
         <div className='part1x'>

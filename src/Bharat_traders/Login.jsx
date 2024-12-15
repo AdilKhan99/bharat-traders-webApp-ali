@@ -73,6 +73,7 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
+            <a href="/ForgotPassword" className="link">Forgot password?</a>
             <button type="submit" className="continue-button">Continue</button>
           </form>
           <p className="help-text">

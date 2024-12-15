@@ -2,7 +2,7 @@ import React from 'react'
 import './styling/about.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
-// import img1 from './images/papa.png'
+import img1 from './images/Papa.png'
 import a from './images/icecream2.jpg'
 
 
@@ -10,9 +10,8 @@ function About() {
   return (
     <>
      <Navbar/>
-      <h1>this is the about page</h1>
+      {/* <h1>this is the about page</h1> */}
       <div className='aboutmain'>
-         {/* <div id='factory'> <img src={a} alt="" /> </div> */}
 
         <div className='aboutp1'>
         <h1 id='about'>About Us</h1>
@@ -33,12 +32,16 @@ function About() {
         to expand business internationally.
          </p>
          </div>
-        <div className='aboutp2'></div>
+        <div className='aboutp2'>
+          <img src={img1} alt="" />
+        </div>
         </div>
 
 
         <div className='aboutmain2'>
-          <div className='aboutp3'></div>
+          <div className='aboutp3'>
+            <img src={a} alt="" id='papaimg' />
+          </div>
           <div className='aboutp4'>
             <h1 id='vision'>Vision</h1>
             <p id='paragraph2'>Our vision is to be a globally recognized import company that prioritizes quality, service, and value. Our commitment to quality ensures that every product we trade meets rigorous criteria, guaranteeing reliability and excellence. By prioritizing exceptional service, we foster strong, long-lasting relationships with our clients, built on trust and mutual respect. We strive to create value not only through competitive pricing and efficient logistics but also by understanding and anticipating the diverse needs of the global market.

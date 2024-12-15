@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import './styling/CreateAccount.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import a from './images/finallogo.png';
-import b from './images/finallogo4.jpeg'
 import c from './images/finalcirclelogo.png'
 
 function CreateAccount() {
@@ -66,7 +64,7 @@ function CreateAccount() {
           </p>
 
           <button type="submit" className="verify-button">Verify Email Address</button>
-        </form>
+        </form> 
 
         <p className="signin-text">
           Already have an account? <a href="/Login" className="link">Sign in</a>

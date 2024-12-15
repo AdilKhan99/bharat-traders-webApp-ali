@@ -62,7 +62,7 @@ function Footer() {
         <div class="foot-panel3">
           <div class="logo-last"> <img src={a} alt="" /> </div>
           <div><h1 id="headingStyle">Trusted House of Food Raw Material's</h1>
-          </div>
+          </div> 
         </div>
 
         <div class="footer-panel5">
