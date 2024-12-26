@@ -33,8 +33,8 @@ function Verification() {
         localStorage.setItem('customerName', customerData.name); // Save name for Navbar
         localStorage.setItem('customerEmail', customerData.email); // Optional, if needed elsewhere
 
-        // Redirect to the home page
-        nav('/');
+        // Redirect to the login page
+        nav('/Login'); 
       } else {
         setError('Verification failed. Please check your OTP.');
       }

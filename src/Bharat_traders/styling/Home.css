@@ -74,30 +74,29 @@
     font-size: 2.5rem; /* Adjust icon size */
   }
 
-  #Addtocart{
+  /* #Addtocart{
    background-color: #047664;
    color: white;
    padding: 7px;
    border-radius: 20px;
    font-size: 14px;
-  }
+  } */
 
-   #AddToCart {
-    /* background-color: #047664; */
+   /* #AddToCart {
+    background-color: #047664; 
     background-color: #f1623f;
-    /* background-color: rgb(237, 237, 20); */
     color: white;
     padding: 7px;
     border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+  } */
   
-  #AddToCart:hover {
-    transform: scale(1.1); /* Slightly increase size */
+  /* #AddToCart:hover {
+    transform: scale(1.1); // Slightly increase size 
      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  }
+  } */
   
 /* Button for Back to Top */
 .back-to-top-btn {

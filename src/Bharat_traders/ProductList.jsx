@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./styling/ProductList.css"
 
 
 // Loading Spinner Component
@@ -78,16 +79,19 @@ const ProductList = ({ apiUrl }) => {
               <p className="mt-2 text-gray-600">{product.description}</p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-lg font-bold text-gray-800">₹{product.price.toFixed(2)}</span>
-                <button 
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                
+                <span className="inline-flex items-center px-2 py-1 text-sm font-semibold text-white bg-green-500 available-badge">
+                  Available: {product.available}
+                </span>
+              </div>
+              <br />
+              <div>
+              <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
                   id='AddToCart'
                   onClick={() => handleAddToCart(product.productId)}
                 >
                   Add To Cart
                 </button>
-                <span className="inline-flex items-center px-2 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">
-                  Available: {product.available}
-                </span>
               </div>
             </div>
           </div>

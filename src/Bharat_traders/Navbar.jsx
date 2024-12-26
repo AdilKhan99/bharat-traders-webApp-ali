@@ -5,6 +5,7 @@ import cartIcon from './images/cart.png';
 import loginIcon from './images/login.png';
 import logoutIcon from './images/logout.png';
 import logoIcon from './images/finalcirclelogo.png';
+import Logout from './Logout';
 
 function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -61,6 +62,7 @@ function Navbar() {
           </Link>
         )}
       </div>
+      {isLoggedIn && <Logout setIsLoggedIn={setIsLoggedIn} setCustomerName={setCustomerName} />}
     </div>
   );
 }
