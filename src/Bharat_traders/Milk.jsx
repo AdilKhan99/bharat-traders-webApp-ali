@@ -23,7 +23,7 @@ function Milk() {
     
       <div>
         <h1 id='heading'>Skimmed Milk Powder</h1>
-        <ProductList apiUrl="http://localhost:8080/products/category/4" />
+        <ProductList apiUrl="http://3.110.40.4:8080/products/category/4" />
       </div>
 
 

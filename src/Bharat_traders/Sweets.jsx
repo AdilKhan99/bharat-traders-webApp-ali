@@ -17,7 +17,7 @@ function Sweets() {
 
       </div>
 
-      <ProductList apiUrl="http://localhost:8080/products/category/3" /> 
+      <ProductList apiUrl="http://3.110.40.4:8080/products/category/3" /> 
       <Footer/>
     </div>
   )

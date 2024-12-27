@@ -17,7 +17,7 @@ function Verification() {
     setError('');
     try {
       // Verifying the OTP
-      const response = await axios.post(`http://localhost:8080/customers/${customerId}/verify`, null, {
+      const response = await axios.post(`http://3.110.40.4:8080/customers/${customerId}/verify`, null, {
         params: { otp: otp },
       });
 
@@ -26,7 +26,7 @@ function Verification() {
         alert('Email verified successfully!');
 
         // Fetch customer details after successful verification
-        const customerResponse = await axios.get(`http://localhost:8080/customers/${customerId}`);
+        const customerResponse = await axios.get(`http://3.110.40.4:8080/customers/${customerId}`);
         const customerData = customerResponse.data.body;
 
         // Save customer details in localStorage

@@ -17,7 +17,7 @@ function IceCream() {
       <div className='part1'>
         <img src={a} alt="" id='ice1'/>
       </div>
-      <ProductList apiUrl="http://localhost:8080/products/category/1" /> 
+      <ProductList apiUrl="http://3.110.40.4:8080/products/category/1" /> 
       <Footer/>
     </div>
   )

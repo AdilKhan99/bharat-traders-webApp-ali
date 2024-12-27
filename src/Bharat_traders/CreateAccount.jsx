@@ -23,7 +23,7 @@ function CreateAccount() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/customers', customer);
+      const response = await axios.post('http://3.110.40.4:8080/customers', customer);
       alert('Customer added successfully!');
       localStorage.setItem('customerId', response.data.body.customerId); // Save ID for verification
       setCustomer({ name: '', email: '', password: '', address: '', phoneNumber: '' }); // Reset form

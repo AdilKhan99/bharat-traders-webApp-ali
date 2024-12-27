@@ -36,7 +36,7 @@ function Footer() {
             <a>Linkdin</a>
           </ul>
 
-          <ul>
+          <ul className="desktop-res">
             <p className="para">Make Money with Us</p>
             <a>Sell on Bharat Traders</a>
             <a>Sell under Bharat Traders Accelerator</a>
@@ -48,7 +48,7 @@ function Footer() {
             <a>Bharat Pay on Merchants</a>
           </ul>
 
-          <ul>
+          <ul className="desktop-res">
             <p className="para">Let Us Help You</p>
             <a>ACOVID-19 and Bharat Traders</a>
             <a>Your Account</a>

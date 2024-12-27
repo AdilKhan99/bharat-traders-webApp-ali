@@ -17,7 +17,7 @@ function Bakery() {
       <div className='part1'>
         <video src={a} id='bakery1' autoPlay loop ></video>
       </div>
-      <ProductList apiUrl="http://localhost:8080/products/category/2" /> 
+      <ProductList apiUrl="http://3.110.40.4:8080/products/category/2" /> 
       <Footer/> 
     </div>
   )

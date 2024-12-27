@@ -16,7 +16,7 @@ const CartAssigned = () => {
     const fetchCartItems = async () => {
       const cartId = localStorage.getItem("cartId");
       try {
-        const response = await fetch(`http://localhost:8080/cart-items/${cartId}/items`);
+        const response = await fetch(`http://3.110.40.4:8080/cart-items/${cartId}/items`);
         if (!response.ok) {
           throw new Error(`Failed to fetch cart items: ${response.status}`);
         }
@@ -47,7 +47,7 @@ const CartAssigned = () => {
     try {
       if (quantity <= 0) {
         // Delete the item from the backend
-        const deleteResponse = await fetch(`http://localhost:8080/cart-items/${cartItemId}`, {
+        const deleteResponse = await fetch(`http://3.110.40.4:8080/cart-items/${cartItemId}`, {
           method: "DELETE",
         });
   
@@ -62,7 +62,7 @@ const CartAssigned = () => {
       }
   
       // Update the quantity of the item
-      const response = await fetch(`http://localhost:8080/cart-items/${cartItemId}/quantity/${quantity}`, {
+      const response = await fetch(`http://3.110.40.4:8080/cart-items/${cartItemId}/quantity/${quantity}`, {
         method: "PUT",
       });
   

@@ -20,7 +20,7 @@ function ForgotPassword() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/customers/reset-password?email=${encodeURIComponent(email)}&newPassword=${encodeURIComponent(newPassword)}`, 
+        `http://3.110.40.4:8080/customers/reset-password?email=${encodeURIComponent(email)}&newPassword=${encodeURIComponent(newPassword)}`, 
         {
           method: 'POST',
           headers: {

@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:8080/customers/login', {
+      const response = await fetch('http://3.110.40.4:8080/customers/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

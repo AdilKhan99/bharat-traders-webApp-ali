@@ -42,7 +42,7 @@ const ProductList = ({ apiUrl }) => {
         }
   
         const response = await fetch(
-          `http://localhost:8080/cart-items/${cartId}/add/${productId}/1`,
+          `http://3.110.40.4:8080/cart-items/${cartId}/add/${productId}/1`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

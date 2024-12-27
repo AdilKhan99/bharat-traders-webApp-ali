@@ -120,3 +120,17 @@ ul a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
 }
+
+@media (max-width:768px){
+    .desktop-res{
+        display: none;
+    }
+#headingStyle{
+    font-size: 30px;
+}
+}
+@media (max-width:575px){
+#headingStyle{
+    font-size: 18px;
+}
+}

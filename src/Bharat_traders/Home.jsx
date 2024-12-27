@@ -73,7 +73,7 @@ function Home() {
   useEffect(() => {
     const fetchCartId = async () => {
       try {
-        const response = await fetch('http://localhost:8080/get-cart-id', { method: 'GET' });
+        const response = await fetch('http://3.110.40.4:8080/get-cart-id', { method: 'GET' });
         if (!response.ok) throw new Error(`Failed to fetch cart ID: ${response.status}`);
         
         const data = await response.json();
@@ -91,7 +91,7 @@ function Home() {
       <Navbar />
       <ImageSlider />
       
-      <ProductList apiUrl="http://localhost:8080/products" /> 
+      <ProductList apiUrl="http://3.110.40.4:8080/products" /> 
       <BackToTopButton />
       <Footer />
     </div>
