@@ -1,6 +1,7 @@
 import React from "react";
 import "./styling/Footer.css";
 import a from './images/finalcirclelogo.png'
+let x = "#backToTop"
 
 
 function Footer() {
@@ -8,9 +9,10 @@ function Footer() {
   return (
     <div>
       <footer className="footer">
-        {/* Amazon footer */}
-        <div class="foot-panel1">
-          <a href="#backToTop"> Back to Top</a> 
+        {/* Bharat Traders footer */}
+        <div >
+          <button class="foot-panel1"><a href="#backToTop"> Back to Top</a>  </button>
+           
           {/* backTotop is a id present in the navbar.jsx there to there we are calling */}
         </div>
 

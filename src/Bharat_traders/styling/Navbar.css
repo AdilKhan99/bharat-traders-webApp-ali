@@ -7,7 +7,31 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  
 }
+.navbar-item {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.navbar-item::after {
+  content: "";
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px; /* Thickness of the underline */
+  background-color: #01362e; /* Color of the underline */
+  transition: width 0.3s ease-in-out;
+
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+}
+
 
 .menu-items {
   display: flex;
